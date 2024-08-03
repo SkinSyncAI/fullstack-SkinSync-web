@@ -1,0 +1,77 @@
+*{
+    text-decoration:none;
+    border-collapse:collapse;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    color:#000;
+}
+.comparison::-webkit-scrollbar, ol::-webkit-scrollbar{
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    width:8px;
+    height:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(209, 208, 208);
+    border:5px solid transparent;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(206, 206, 206);
+}
+::-webkit-scrollbar-thumb:active{
+    background:rgb(190, 190, 190);
+}
+.c_imp{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+h1{
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+}
+h2{
+    font-family: "Inter", sans-serif;
+    color:rgb(47, 142, 197);
+    font-size:12px;
+    text-align: left;
+}
+h3{
+    font-family: "Inter", sans-serif;
+    font-size:15px;
+    font-weight:bolder;
+    margin-bottom:15px;
+}
+h4{
+    font-family: "Inter", sans-serif;
+    font-size:20px;
+    font-weight:700;
+}
+p{
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size:14px;
+}
+li{
+    font-size:10px;
+}
+button{
+    width:fit-content;
+    border-style: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+button:active{
+    cursor: pointer;
+    background-color:rgb(230, 230, 230);
+}

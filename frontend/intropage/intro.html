@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <title>SkinSync</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="intro_style.css" />
   </head>
   <body>
     <div class="screen">
@@ -79,16 +79,21 @@
        
 
         <!-- 피부타입 표시 부분 -->
-        <div class="overlap-5">
+        <div class="skintype">
           <!--여기도 user에 따라서 이름 변경돼야 함 -> 여기서 db 사용 소요 있음 ( 로그인 기능 )-->
-          <p class="p"><span class="span">김지성 </span> <span class="text-wrapper-11">님의 피부타입은 </span></p>
+          <p class="p"><span class="span"> 당신의 </span> <span class="text-wrapper-11"> 피부타입은 </span></p>
           <div class="rectangle-6"></div>
           <div class="rectangle-7"></div>
           <div class="rectangle-8"></div>
-          <div class="text-wrapper-12">O</div>
-          <div class="text-wrapper-13">S</div>
-          <div class="text-wrapper-14">?</div>
+          <div class="rectangle-11"></div>
+          <div class="result-texts">
+            <div class="result-texts skintype1"></div>
+            <div class="result-texts skintype2"></div>
+            <div class="result-texts skintype3"></div>
+            <div class="result-texts skintype4"></div>
+          </div>
         </div>
+        
 
         
         <!-- 챗지피티 작성 코드 부분 -->
@@ -203,7 +208,7 @@
           <div class="text-wrapper-20">각질제거</div>
         </div>
         <div class="overlap-12">
-          <p class="text-wrapper-21">O S _ _ 타입 해석 바로가기</p>
+          <p class="text-wrapper-21">피부타입 해석 바로가기</p>
           <img class="group-6" src="img/group-103.png" />
         </div>
         <div class="overlap-13">
@@ -235,10 +240,7 @@
             <img class="line-10" src="img/line-5-8.png" /> <img class="line-11" src="img/line-5-8.png" />
           </div>
         </div>
-        <div class="overlap-16">
-          <div class="rectangle-11"></div>
-          <div class="text-wrapper-24">?</div>
-        </div>
+        
 
         <!-- 카메라 버튼 왼쪽 -->
         <!-- <div class="overlap-17">
@@ -267,6 +269,6 @@
       </div>
     </div>
     <!-- script.js 라는 js 파일로 이 코드를 실행하겠다-->
-    <script src="script.js"></script>
+    <script src="intro_script.js"></script>
   </body>
 </html>

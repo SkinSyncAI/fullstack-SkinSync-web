@@ -189,9 +189,13 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // 각 답변 버튼 클릭 시 처리 함수
+    // event 객체는 클릭 이벤트에 대한 정보 담고있음
     function handleAnswerClick(event) {
+        // 클릭된 요소의 가장 가까운 조상 요소 찾기 ( 어떤 질문에 대한 버튼인지 식별 )
         const container = event.currentTarget.closest('.question-container');
+        // data-question-id 속성 값을 questionId 변수에 저장 ( 고유 식별자 )
         const questionId = container.getAttribute('data-question-id');
+        // 현재 질문 컨테이너 내의 모든 .answer-circle 클래스 요소 변수에 저장
         const answerCircles = container.querySelectorAll('.answer-circle');
 
         // 선택된 스타일 제거
@@ -208,6 +212,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 결과 텍스트를 콘솔에 출력
         console.log('Updated Answers:', answers);
+
+        // 결과 텍스트 화면에 출력
+        displayAnswers();
     }
 
     // 각 답변 버튼에 클릭 이벤트 추가
@@ -225,6 +232,31 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         return mapping[questionId][answer];
     }
+
+    // 결과 텍스트를 화면에 업데이트하는 함수
+    // function updateResultTexts() {
+    //     const resultTexts = document.querySelectorAll('.result-text');
+        
+    //     resultTexts.forEach((element, index) => {
+    //         const questionNumber = index + 1;
+    //         element.textContent = answers[questionNumber] || '';
+    //     });
+    // }
+    function displayAnswers() {
+        const resultText = [
+            answers[1] || '',
+            answers[2] || '',
+            answers[3] || '',
+            answers[4] || ''
+        ].join('');
+    
+        // 각 클래스에 텍스트를 설정
+        document.querySelector('.result-texts.skintype1').textContent = answers[1] || '';
+        document.querySelector('.result-texts.skintype2').textContent = answers[2] || '';
+        document.querySelector('.result-texts.skintype3').textContent = answers[3] || '';
+        document.querySelector('.result-texts.skintype4').textContent = answers[4] || '';
+    }
+    
 
     // 서버로 데이터를 전송하는 함수
     function sendDataToServer() {

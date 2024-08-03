@@ -1,0 +1,140 @@
+@media (max-width:394px){
+    h2{
+        font-size: 10px;
+    }
+    h3{
+        font-size:12px;
+    }
+    h4{
+        font-size:15px;
+    }
+    p{
+        margin-left:-3px;
+        font-size:12px;
+    }
+    .comparison::-webkit-scrollbar, ol::-webkit-scrollbar{
+        border-radius: 10px;
+        background-color: rgb(230, 230, 230);
+        width:5px;
+        height:6px;
+    }
+    button{
+        border-radius: 5px;
+    }
+    .cos_name{
+        font-size:small;
+    }
+    .nav{
+        height:35px;
+    }
+    .icon{
+        width: 27px !important;
+        height:27px !important;
+        background-size: 17px 17px !important;
+    }
+    #search_box{
+        height:23px;
+    }
+    #search_text{
+        font-size:10px;
+    }
+    #submit{
+        margin: 5px 3px;
+        width:15px !important;
+        height:15px !important;
+    }
+    .comparison > p{
+        font-size:13px;
+    }
+    .adv{
+        height:15vw;
+        margin: 35px auto 5px;
+    }
+    .cos_box{
+        border-width:2px;
+    }
+    #next{
+        top:21%;
+        width: 25px;
+        height: 30px;
+        background-size: 25px 25px;
+    }
+    .c_title{
+        padding: 0 3px;
+    }
+    #star{
+        width:18px !important;
+        height:18px !important;
+        margin-left:-15%;
+    }
+    #percent{
+        margin-left:10px;
+        margin-right: 3px;
+    }
+    #price{
+        font-size: 12px;
+    }
+    .cos_info > span{
+        width:4px;
+        height: 4px;
+    }
+    .component > p{
+        font-size:12px;
+        width:21.5%;
+    }
+    .compare{
+        width:calc(100% - 1vh);
+    }
+    .more_info_box{
+        width: 120px;
+        height:120px;
+        border-width: 1px;
+    }
+    .more_info_box > p{
+        margin-top:15px;
+        padding: 0 4px;
+        font-weight:400;
+        font-size:10px;
+        margin-left:5px;
+        margin-top: 15%;
+    }
+    .more_info_wrap > ol{
+        width: 110px;
+        padding-left: 15px;
+    }
+    .r_type_box > h4{
+        border-radius: 7px;
+    }
+    .more_info_box > span > p{
+        transform: scale(.9,.9);
+        margin:2px auto;
+        font-weight:400;
+    }
+    .r_icon{
+        width:25px;
+        height:25px;
+        background-size: 18px 18px;
+    }
+    .footer{
+        border-width: 1px;
+    }
+    .footer > button{
+        height:25px;
+        font-size:12px;
+        padding: 0 15px;
+    }
+}
+@media (min-width:410px){
+    li{
+        font-size:13px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    h3{
+        font-size:15px;
+    }
+    h4{
+        font-size:18px;
+    }
+}

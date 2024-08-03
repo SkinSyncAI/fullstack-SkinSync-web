@@ -241,33 +241,13 @@
 
 
 
-
-
-
-/* 질문 1 */
+/* 질문 공통 사항 코드 */
 .question-container {
   position: absolute;
   /* width: 341px;
   height: 45px;
   top: 409px;
   left: 36px; */
-}
-
-.skintype_question_1{
-  width: 341px;
-  height: 45px;
-  top: 409px;
-  left: 36px;
-}
-
-.skintype_question_1 .rectangle {
-  position: absolute;
-  width: 313px;
-  height: 37px;
-  top: 0;
-  left: 0;
-  background-color: #a6f9ff73;
-  border-radius: 20px;
 }
 
 .button-group {
@@ -290,6 +270,38 @@
   transition: border 0.3s ease;
   /* z-index: 1; */
 }
+
+/* 마우스를 올리면 빨간 테두리 */
+.answer-circle:hover {
+  border-color: red !important;
+}
+
+/* 선택된 원에 빨간 테두리 유지 */
+.selected {
+  border-color: red !important;
+  /* !important를 통해 우선순위가 높아져서 수행된다. */
+}
+
+
+/* 질문 1 */
+.skintype_question_1{
+  width: 341px;
+  height: 45px;
+  top: 409px;
+  left: 36px;
+}
+
+.skintype_question_1 .rectangle {
+  position: absolute;
+  width: 313px;
+  height: 37px;
+  top: 0;
+  left: 0;
+  background-color: #a6f9ff73;
+  border-radius: 20px;
+}
+
+
 
 .skintype_question_1 .o-circle {
   position: absolute;
@@ -323,7 +335,6 @@
   transition: border 0.3s ease;
 }
 
-
 .skintype_question_1 .o_answer_text {
   /* position: absolute; */
   /* position: relative */
@@ -336,6 +347,7 @@
   font-size: 14px;
   cursor: pointer;
   /* margin-right: 10px; */
+  margin-left: 2px;
   font-family: "Inter", Helvetica;
   letter-spacing: 0;
   line-height: normal;
@@ -347,6 +359,7 @@
   width: 52px;
   top: 8px;
   left: 289px;
+  margin-left: 2px;
   font-family: "Inter", Helvetica;
   font-weight: 800;
   color: #a52929;
@@ -358,15 +371,6 @@
   z-index:1;
 }
 
-/* 마우스를 올리면 빨간 테두리 */
-.answer-circle:hover {
-  border-color: red;
-}
-
-/* 선택된 원에 빨간 테두리 유지 */
-.selected {
-  border-color: red;
-}
 
 .skintype_question_1 .question_text {
   width: 241px;
@@ -447,6 +451,7 @@
   /* color: black; */
   font-size: 14px;
   cursor: pointer;
+  margin-left: 2px;
   /* margin-right: 10px; */
   font-family: "Inter", Helvetica;
   letter-spacing: 0;
@@ -466,6 +471,7 @@
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;
+  margin-left: 2px;
   /* margin-right: 10px; */
   z-index:1;
 }
@@ -548,6 +554,7 @@
   font-size: 14px;
   cursor: pointer;
   /* margin-right: 10px; */
+  margin-left: 2px;
   font-family: "Inter", Helvetica;
   letter-spacing: 0;
   line-height: normal;
@@ -567,6 +574,7 @@
   line-height: normal;
   cursor: pointer;
   /* margin-right: 10px; */
+  margin-left: 2px;
   z-index:1;
 }
 
@@ -648,6 +656,7 @@
   font-size: 14px;
   cursor: pointer;
   /* margin-right: 10px; */
+  margin-left: 2px;
   font-family: "Inter", Helvetica;
   letter-spacing: 0;
   line-height: normal;
@@ -667,6 +676,7 @@
   line-height: normal;
   cursor: pointer;
   /* margin-right: 10px; */
+  margin-left: 2px;
   z-index:1;
 }
 
@@ -686,18 +696,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ox 버튼 디자인 */
-.screen .oxgroup_o_1 .o_noncircled_back:hover,
+/* .screen .oxgroup_o_1 .o_noncircled_back:hover,
 .screen .oxgroup_o_1 .o_noncircled_back.active{
   border: 2px solid red;
 }
@@ -763,7 +763,7 @@
   left: 0;
   background-color: #ffa6a657;
   border-radius: 20px;
-}
+} */
 
 
 .screen .overlap-group-wrapper {
@@ -852,7 +852,7 @@
   line-height: normal;
 }
 
-.screen .overlap-5 {
+.screen .skintype {
   position: absolute;
   width: 289px;
   height: 42px;
@@ -863,7 +863,7 @@
 .screen .p {
   width: 258px;
   top: 13px;
-  left: 0;
+  left: 20px;
   font-weight: 400;
   font-size: 15px;
   white-space: nowrap;
@@ -912,11 +912,15 @@
   height: 41px;
   top: 0;
   left: 246px;
-  background-color: #d9d9d9;
+  background-color: #cdffa678;
   border-radius: 10px;
 }
 
-.screen .text-wrapper-12 {
+.result-texts {
+  position: absolute;
+}
+
+.screen .skintype1 {
   width: 31px;
   top: 4px;
   left: 171px;
@@ -927,9 +931,10 @@
   font-family: "Inter", Helvetica;
   letter-spacing: 0;
   line-height: normal;
+  z-index:1;
 }
 
-.screen .text-wrapper-13 {
+.screen .skintype2 {
   position: absolute;
   width: 31px;
   top: 4px;
@@ -942,7 +947,7 @@
   line-height: normal;
 }
 
-.screen .text-wrapper-14 {
+.screen .skintype3 {
   width: 31px;
   top: 4px;
   left: 258px;
@@ -954,6 +959,39 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+.screen .overlap-16 {
+  position: absolute;
+  width: 43px;
+  height: 42px;
+  top: 353px;
+  left: 317px;
+}
+
+.screen .rectangle-11 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 0;
+  left: 289px;
+  background-color: #ffa6a657;
+  border-radius: 10px;
+}
+
+.screen .skintype4 {
+  width: 31px;
+  top: 4px;
+  left: 300px;
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
 
 .screen .overlap-6 {
   position: absolute;
@@ -1234,7 +1272,7 @@
   position: absolute;
   width: 241px;
   top: 14px;
-  left: 60px;
+  left: 80px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -1360,36 +1398,6 @@
   object-fit: cover;
 }
 
-.screen .overlap-16 {
-  position: absolute;
-  width: 43px;
-  height: 42px;
-  top: 353px;
-  left: 317px;
-}
-
-.screen .rectangle-11 {
-  position: absolute;
-  width: 41px;
-  height: 41px;
-  top: 0;
-  left: 0;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-}
-
-.screen .text-wrapper-24 {
-  width: 31px;
-  top: 4px;
-  left: 12px;
-  font-weight: 500;
-  font-size: 24px;
-  position: absolute;
-  font-family: "Inter", Helvetica;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
 .screen .overlap-17 {
   position: absolute;
