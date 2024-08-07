@@ -374,10 +374,10 @@
 
 .skintype_question_1 .question_text {
   width: 241px;
-  top: 9px;
+  top: 12px;
   left: 21px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -479,10 +479,10 @@
 
 .skintype_question_2 .question_text {
   width: 241px;
-  top: 9px;
+  top: 12px;
   left: 21px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -581,10 +581,10 @@
 
 .skintype_question_3 .question_text {
   width: 241px;
-  top: 9px;
+  top: 12px;
   left: 21px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -683,10 +683,10 @@
 
 .skintype_question_4 .question_text {
   width: 241px;
-  top: 9px;
+  top: 12px;
   left: 21px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -828,7 +828,7 @@
   position: absolute;
   width: 88px;
   top: 180px;
-  left: 47px;
+  left: 20px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -841,7 +841,7 @@
 .screen .text-wrapper-10 {
   width: 88px;
   top: 100px;
-  left: 170px;
+  left: 145px;
   font-weight: 700;
   font-size: 14px;
   white-space: nowrap;
@@ -1054,11 +1054,11 @@
 
 .screen .text-wrapper-15 {
   width: 34px;
-  top: 8px;
+  top: 9.5px;
   left: 24px;
   text-shadow: 0px 4px 4px #0000001a;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1069,12 +1069,31 @@
 
 .screen .overlap-8 {
   position: absolute;
-  width: 60px;
+  width: 83px;
   height: 37px;
   top: 209px;
-  left: 96px;
-  background-image: url(./img/rectangle-3.svg);
+  left: 91px;
+  background-image: url(./img/rectangle-5.svg);
   background-size: 100% 100%;
+}
+
+.screen .overlap-10 {
+  position: absolute;
+  width: 88px;
+  height: 37px;
+  top: 209px;
+  left: 187px;
+  background-image: url(./img/rectangle-4.svg);
+  background-size: 100% 100%;
+}
+
+
+.screen .rectangle-10 {
+  position: absolute;
+  width: 66px;
+  height: 39px;
+  top: 0;
+  left: 0;
 }
 
 .screen .div-wrapper {
@@ -1087,10 +1106,10 @@
 
 .screen .text-wrapper-16 {
   width: 34px;
-  top: 8px;
-  left: 25px;
+  top: 10px;
+  left: 23px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1115,13 +1134,7 @@
   left: 82px;
 }
 
-.screen .rectangle-10 {
-  position: absolute;
-  width: 66px;
-  height: 39px;
-  top: 0;
-  left: 0;
-}
+
 
 .screen .group-2 {
   position: absolute;
@@ -1168,10 +1181,10 @@
 
 .screen .text-wrapper-17 {
   width: 47px;
-  top: 9px;
+  top: 10px;
   left: 108px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1182,10 +1195,10 @@
 
 .screen .text-wrapper-18 {
   width: 89px;
-  top: 9px;
+  top: 10px;
   left: 19px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1194,15 +1207,7 @@
   line-height: normal;
 }
 
-.screen .overlap-10 {
-  position: absolute;
-  width: 88px;
-  height: 37px;
-  top: 209px;
-  left: 179px;
-  background-image: url(./img/rectangle-4.svg);
-  background-size: 100% 100%;
-}
+
 
 .screen .group-4 {
   position: absolute;
@@ -1214,10 +1219,10 @@
 
 .screen .text-wrapper-19 {
   width: 60px;
-  top: 7px;
-  left: 26px;
+  top: 9.5px;
+  left: 23px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1246,10 +1251,10 @@
 
 .screen .text-wrapper-20 {
   width: 57px;
-  top: 7px;
+  top: 9px;
   left: 25px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1271,12 +1276,12 @@
 .screen .text-wrapper-21 {
   position: absolute;
   width: 241px;
-  top: 14px;
-  left: 80px;
+  top: 18px;
+  left: 32px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #000000;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 1.4px;
   line-height: normal;
   white-space: nowrap;
@@ -1313,7 +1318,7 @@
   top: 8px;
   left: 28px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
@@ -1334,10 +1339,10 @@
 
 .screen .text-wrapper-23 {
   width: 69px;
-  top: 8px;
-  left: 25px;
+  top: 9px;
+  left: 27px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   position: absolute;
   font-family: "Inter", Helvetica;
