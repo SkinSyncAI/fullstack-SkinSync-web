@@ -48,7 +48,7 @@
         display: none;
         position:relative;
         width:30vw;
-        height:30px;
+        height:25px;
         border:1px solid black;
         border-radius: 10px;
 }
@@ -65,7 +65,7 @@
         width:22px !important;
         height:22px !important;
         background-size: cover;
-        margin:4px 2px;
+        margin:1% 2px;
         right:0;
         background-image: url(images/nav/search.png);
 }
@@ -96,17 +96,28 @@
         border: solid 3px rgba(128, 128, 128, 0.3);
         border-radius: 10px;
 }
-.cos_img{
-        background-size: cover;
-        width:150px;
-        height:200px;
+#main_cos_img{
+        background-size:contain;
+        width:140px;
+        max-height: 140px;
         margin: auto 15px;
 }
 .cos_info{
         display: block;
 }
-.cos_info > h2{
+#main_cos_brand{
         margin-top:10px;
+        font-family: "Inter", sans-serif;
+        color:rgb(47, 142, 197);
+        font-size:12px;
+        font-weight:bolder;
+        text-align: left;
+}
+#main_cos_id{
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: left;
 }
 #love{
         position:absolute;
@@ -117,7 +128,7 @@
 #love:active{
         filter:invert(19%) sepia(78%) saturate(7429%) hue-rotate(357deg) brightness(120%) contrast(117%);
 }
-.cos_name{
+#main_cos_id{
         font-size:medium;
 }
 #point{
@@ -141,7 +152,8 @@
         right:5px;
 }
 .cos_exp{
-        width:91%;
+        margin-left:-2vw;
+        width:102%;
         text-align: left;
 }
 .cos_exp > li{
@@ -360,32 +372,22 @@
         margin:5px 3px;
         border-radius:10px;
 }
-.r_type_box > h4:hover{
-        filter:brightness(0.8);
-        cursor: pointer;
-}
 #o{
         background-color: rgb(127, 255, 212, 0.4);
 }
-#s{
+#s, #r{
         background-color: rgb(255, 228, 196, 0.4);
 }
-#n{
+#n, #p{
         background-color: rgb(127, 255, 165, 0.4);
 }
 #w{
         background-color: rgb(255, 164, 152, 0.4);
 }
-#r{
-        background-color:rgb(213, 168, 255, 0.4)
-}
-#p{
-        background-color: rgb(205, 255, 155, 0.4);
-}
 .more_info_box > span > p{
-        font-size:8px;
-        margin:8px auto;
-        padding: 1px 5px;
+        font-size:10px;
+        margin:7px auto;
+        padding: 1px 3px;
 }
 .more_info_box > span > .c_title{
         width:55px;
@@ -432,7 +434,7 @@
         background-color: white;
 }
 .footer > button{
-        padding: 0 20px;
+        padding: 0 6%;
         height:30px;
         font-family: "Noto Sans KR", sans-serif;
         font-style:normal;
@@ -441,10 +443,40 @@
         margin-top:2%;
         border:2px solid rgb(194, 194, 194);
 }
+.footer > button:active{
+        filter:brightness(0.8);
+}
 #f_bag{
         margin-left:10%;
 }
 #f_buy{
         background-color: rgb(194, 194, 194);
-        margin-left: 10px;
+        margin-left: 5%;
+}
+#mask{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 100;
+}
+#mask > p{
+        position:absolute;
+        text-align: center;
+        left:37%;
+        top:46%;
+        font-size:6vw;
+        color:rgb(255, 255, 255);
+        font-weight: 800;
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+#bar{
+        position:absolute;
+        width:60%;
+        height:15px;
+        background-size: cover;
+        top:50%;
+        left:20%;
 }

@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="component/responsive.css" media="screen">
     </head>
     <body>
+        <div id="mask">
+            <p>LOADING</p>
+            <img id="bar" src="component/images/loading_bar.gif"></img>
+        </div>
         <div class="wrap">
             <div class="nav">
                 <ul id="nav_icons">
@@ -20,8 +24,8 @@
                     <li><a class="icon" id="home" href="../intropage/intro.html"></a></li>
                     <li><a class="icon" id="export"></a></li>
                     <li>
-                        <form id="search_box" action="" method="get">
-                            <input id="search_text" placeholder="검색어를 입력하세요">
+                        <form id="search_box" onsubmit="apply(document.querySelector('#search_text').value)"  method="get">
+                            <input id="search_text" accept=".csv" placeholder="검색어를 입력하세요">
                             <button class="icon" id="submit" type="submit"></button>
                         </form>
                     </li>
@@ -32,11 +36,12 @@
             <div class="contents">
                 <div class="adv"></div>
                 <div class="cos_box">
-                    <img class="cos_img" src="component/images/cos/cos_1_img.png"></img>
+                    
+                    <img id="main_cos_img" src="component/images/cos/cos_1_img.png"></img>
                     <div class="cos_info">
                         <div class=icon id="love"></div>
-                        <h2>AESTURA</h2>
-                        <h1 class="cos_name">Atobarrier 365 Cream Plus</h1>
+                        <p id="main_cos_brand">AESTURA</p>
+                        <p id="main_cos_id">Atobarrier 365 Cream Plus</p>
                         <div id=point>
                             <p class="m_score">87</p>
                             <p class="m_point">point</p>
@@ -174,6 +179,7 @@
                 <button id="f_buy">Buy</button>
             </div>
         </div>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
      </body>
   <script src="component/index_script.js"></script>
 </html>

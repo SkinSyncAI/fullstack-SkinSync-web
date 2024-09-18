@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="kr"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Loading</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <style>
+            #load{
+                display: block;
+                opacity: 0.8;
+                background:white;
+                z-index: 99;
+                text-align: center;
+            }
+            #load > img{
+                position:absolute;
+                top:calc(50%+25px);
+                left:50%;
+                z-index: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="load">
+            <img src="/component/images/loading_bar.gif" alt="loading">
+        </div>
+     </body>
+  <script>
+    const loading=document.getElementById('load');
+    window.onload=function(){
+        setTimeout(function(){
+        loading.style.display='none';
+    }, 1500);
+    }
+  </script>
+</html>

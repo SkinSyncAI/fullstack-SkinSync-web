@@ -123,8 +123,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const jsonData = JSON.stringify(dataToSend);
 
-        console.log('Search Query:', query);
-        console.log('Result Text:', resultData);
+        // console.log('Search Query:', query);
+        // console.log('Result Text:', resultData);
+        console.log('DataToSend:',dataToSend);
 
         fetch('http://localhost:3000/api/submit', { // Replace with your server URL
             method: 'POST',
@@ -144,15 +145,79 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 검색 버튼 클릭 시 데이터 전송
-    document.querySelector('.search-button').addEventListener('click', sendDataToServer);
+    // document.querySelector('.search-button').addEventListener('click', sendDataToServer);
 
-    // 엔터키를 눌렀을 때 데이터 전송
+    // // 엔터키를 눌렀을 때 데이터 전송
+    // document.querySelector('.search-input').addEventListener('keypress', function(event) {
+        
+    //     if (event.key === 'Enter') {
+    //         sendDataToServer();
+    //         event.preventDefault(); // 기본 엔터키 동작 방지
+    //     }
+    // });
+    // 검색 버튼 클릭 시 페이지 전환
+
+    // 서버로 데이터 전송 후 페이지 전환
+    async function handleSearch() {
+        const query = document.querySelector('.search-input').value;
+
+        if (query.trim() === '') {
+            alert('Please enter a search query');
+            return;
+        }
+
+        try {
+            // 데이터 서버로 전송
+            await sendDataToServer();
+
+            // 페이지 전환
+            window.location.href = `../indexpage/index.html?query=${encodeURIComponent(query)}`;
+        } catch (error) {
+            console.error('Error while sending data to server:', error);
+            alert('An error occurred while sending data to the server.');
+        }
+    }
+
+    // 검색 버튼 클릭 시 데이터 전송 및 페이지 전환
+    document.querySelector('.search-button').addEventListener('click', handleSearch);
+
+    // 엔터키를 눌렀을 때 데이터 전송 및 페이지 전환
     document.querySelector('.search-input').addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
-            sendDataToServer();
+            handleSearch();
             event.preventDefault(); // 기본 엔터키 동작 방지
         }
     });
+
+
+    // document.querySelector('.search-button').addEventListener('click', function() {
+    //     const query = document.querySelector('.search-input').value;
+
+    //     if (query.trim() === '') {
+    //         alert('Please enter a search query');
+    //         return;
+    //     }
+
+    //     // 페이지 전환
+    //     window.location.href = `index.html?query=${encodeURIComponent(query)}`;
+    // });
+
+    // // 엔터키를 눌렀을 때 페이지 전환
+    // document.querySelector('.search-input').addEventListener('keypress', function(event) {
+    //     if (event.key === 'Enter') {
+    //         const query = document.querySelector('.search-input').value;
+
+    //         if (query.trim() === '') {
+    //             alert('Please enter a search query');
+    //             event.preventDefault(); // 기본 엔터키 동작 방지
+    //             return;
+    //         }
+
+    //         // 페이지 전환
+    //         window.location.href = `index.html?query=${encodeURIComponent(query)}`;
+    //         event.preventDefault(); // 기본 엔터키 동작 방지
+    //     }
+    // }); 
 });
 
 
